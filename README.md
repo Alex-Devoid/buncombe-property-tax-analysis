@@ -25,8 +25,8 @@ Further research is needed to fully understand the relationship between unpaid p
 
 This is the beginning of a model that tries to predict unpaid bills. Perhaps learning more about what may cuase unpaid bills could help us make public policy recommendations to curb gentrification.
 
-![quintiles](quintile_unpaid_bill_plot1.png)
-![deciles](decile_unpaid_bill_polt1.png)
+![quintiles](images/quintile_unpaid_bill_plot1.png)
+![deciles](images/decile_unpaid_bill_polt1.png)
 
 The variable `total_value_pct_change` represents the percent change in taxable real estate value for single-family homes from 2020 to 2021, and `unpaid_bill` is a binary variable indicating whether or not a property owner has an unpaid bill.
 
