@@ -20,6 +20,8 @@ My analysis builds on this, by showing that the bottom quintiles are also should
 ![deciles](images/unpaid_property_bill_decile_rates.png)
 
 It should be noted that this analysis was conducted independently from Urban3's research and therefore the methodology may be different. Any comparisons or extrapolations should be made with caution.
+
+A note about the unpaid property bills data: I called the County's GIS help line and a gentleman there told me that unpaid bills with a "PIN" value would be real-estate related, while those without it would be a different type of property. This is key to how I joined the unpaid bill data to the parcels data. Before publishing this anywhere I'd tripple check this info.  
 ## What factors lead to unpaid property bills?
 
 Does a higher percent change in property value increase the probability of an unpaid bill? So far I haven't found a statistically significant relationship between the percent change of a home’s taxable value and the likelihood of the owner having an unpaid bill.
