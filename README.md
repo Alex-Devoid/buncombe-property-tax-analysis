@@ -20,16 +20,43 @@ My analysis builds on this, by showing that the bottom quintiles are also should
 It should be noted that this analysis was conducted independently from Urban3's research and therefore the methodology is likely different. Any comparisons or extrapolations should be made with caution.
 ## Percent Change in Property Value by Unpaid Bills
 
-The question this next section aims to answer is whether a higher percent change in property value increases the probability of an unpaid bill.
+Does a higher percent change in property value increase the probability of an unpaid bill? So far I haven't found a statistically significant relationship between the percent change of a home’s taxable value and the likelihood of the owner having an unpaid bill.
 
-Further research is needed to fully understand the relationship between unpaid property bills and gentrification in Buncombe County. However, unpaid bills could be an early-stage symptom of gentrification, as it becomes more expensive to pay taxes on homes.
+Further research is needed to fully understand the relationship between unpaid property bills and gentrification in Buncombe County.
 
-This is the beginning of a model that tries to predict unpaid bills. Perhaps learning more about what potentially causes unpaid bills could help us make public policy recommendations to curb gentrification.
+However, unpaid bills could be an early-stage symptom of gentrification, as it becomes more expensive to pay taxes on homes.
 
-The variable `total_value_pct_change` represents the percent change in taxable real estate value for single-family homes from 2020 to 2021, and `unpaid_bill` is a binary variable indicating whether or not a property owner has an unpaid bill.
+This analysis is a logistic regression aimed at identifying the factors that influence the likelihood of a property owner having an unpaid bill. The dependent variable, `unpaid_bill`, is a binary variable indicating whether or not a property owner had an unpaid bill in 2022.
 
-I used a logistic regression model since unpaid_bill is binary and total_value_pct_change is continuous.
+The independent variables include `total_value_pct_change`, `median_hh_income`, `income_gini`, `pct_white`, `pct_bachelor`, and `pct_rented`.  
 
-The results of the logistic regression indicate that there is a negative association between the percent change in taxable real estate value for single-family homes and the likelihood of a property owner having an unpaid bill. Specifically, for every 1% increase in the percent change in taxable real estate value, the odds of a property owner having an unpaid bill decrease by 1.89%. Additionally, this relationship holds true across housing-value quintiles.
+The `total_value_pct_change` variable represents the percent change in taxable real estate value for a single-family home in Buncombe County from 2020 to 2021.
 
-The results of this model are preliminary. There could be a wide range of explanations for this relationship. A colleague of mine suggested that perhaps "if the valuation goes up because the property has been renovated/sold then part of the mortgage process is probably to make sure the taxes are all current."
+The remaining variables I pulled or calculated from the 2021 American Community Survey at the Census Tract level. The `median_hh_income` variable represents the median household income. The `income_gini` variable represents the Gini coefficient of income inequality. The `pct_white` variable represents the percent of the population that is white in a given tract. The `pct_bachelor` variable represents the percent of the population with a bachelor's degree in a given tract. The `pct_rented` variable represents the percent of the housing units that are rented in a given tract.
+
+The results of the logistic regression suggest that there are several independent variables that are significantly associated with the likelihood of a property owner having an unpaid bill, however these results are only preliminary and more research is needed to fully understand these relationships. 
+
+With that said, the results of this logistic regression suggest that higher median household income and a higher percentage of properties being rented are associated with a lower likelihood of a property owner having an unpaid bill, while a higher percentage of the population being white and having a bachelor's degree or higher are associated with a higher likelihood of a property owner having an unpaid bill.
+
+The variables `total_value_pct_change` and `income_gini` are not statistically significant in their relationship with the likelihood of a property owner having an unpaid bill. 
+
+ Logit Regression Results                           
+==============================================================================
+Dep. Variable:            unpaid_bill   No. Observations:                81885
+Model:                          Logit   Df Residuals:                    81878
+Method:                           MLE   Df Model:                            6
+Date:                Mon, 30 Jan 2023   Pseudo R-squ.:                  0.1830
+Time:                        02:20:23   Log-Likelihood:                -38052.
+converged:                       True   LL-Null:                       -46574.
+Covariance Type:            nonrobust   LLR p-value:                     0.000
+==========================================================================================
+                             coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------
+const                     -2.7929      0.226    -12.353      0.000      -3.236      -2.350
+total_value_pct_change  8.989e-05   9.59e-05      0.937      0.349    -9.8e-05       0.000
+median_hh_income       -7.161e-05   1.07e-06    -66.865      0.000   -7.37e-05   -6.95e-05
+income_gini               -0.2214      0.182     -1.218      0.223      -0.578       0.135
+pct_white                  0.0760      0.002     38.660      0.000       0.072       0.080
+pct_bachelor               0.4777      0.013     36.866      0.000       0.452       0.503
+pct_rented                -0.0601      0.001    -58.163      0.000      -0.062      -0.058
+==========================================================================================
