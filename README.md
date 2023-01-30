@@ -3,11 +3,13 @@
 This analysis aims to explore the potential relationship between unpaid property bills and gentrification in Buncombe County, with a focus on single-family homes. Specifically, it examines unpaid property bills from two perspectives:
 
 - The rates of unpaid property bills among home-valuation quintiles and deciles.
-- The correlation between unpaid property bills and rising home valuations in different housing-valuation quintiles.
-## Unpaid Property Bills and Rising Home Valuations
+- A logistics regression that looks for correlation between unpaid property bills and rising home valuations, among other factors, in different housing-valuation quintiles.
 
-- The rates of unpaid property bills were higher among groups of lower housing valuations.
-- In the highest housing-valuation decile, rates of unpaid property bills were roughly three times higher than in the lowest housing-valuation decile.
+In addition to the README, the Jupyter Notebook in this repositry contains comments on my methodologies. 
+## Highlighted Preliminary Findings
+
+- The rates of unpaid property bills were higher among groups with lower housing valuations.
+- In the lowest housing-valuation decile, rates of unpaid property bills were roughly three times higher than in the decline with the highst valuations.
 ## Rates of Unpaid Property Bills
 
 Urban3 has already shown that homes in the bottom quintiles have experienced a sharper rise in valuations, likely contributing to gentrification. 
@@ -17,8 +19,8 @@ My analysis builds on this, by showing that the bottom quintiles are also should
 ![quintiles](images/unpaid_property_bill_quintile_rates.png)
 ![deciles](images/unpaid_property_bill_decile_rates.png)
 
-It should be noted that this analysis was conducted independently from Urban3's research and therefore the methodology is likely different. Any comparisons or extrapolations should be made with caution.
-## Percent Change in Property Value by Unpaid Bills
+It should be noted that this analysis was conducted independently from Urban3's research and therefore the methodology may be different. Any comparisons or extrapolations should be made with caution.
+## What factors lead to unpaid property bills?
 
 Does a higher percent change in property value increase the probability of an unpaid bill? So far I haven't found a statistically significant relationship between the percent change of a home’s taxable value and the likelihood of the owner having an unpaid bill.
 
@@ -26,7 +28,7 @@ Further research is needed to fully understand the relationship between unpaid p
 
 However, unpaid bills could be an early-stage symptom of gentrification, as it becomes more expensive to pay taxes on homes.
 
-This analysis is a logistic regression aimed at identifying the factors that influence the likelihood of a property owner having an unpaid bill. The dependent variable, `unpaid_bill`, is a binary variable indicating whether or not a property owner had an unpaid bill in 2022.
+I ran a logistic regression aimed at identifying the factors that influence the likelihood of a property owner having an unpaid bill. The dependent variable, `unpaid_bill`, is a binary variable indicating whether or not a property owner had an unpaid bill in 2022.
 
 The independent variables include `total_value_pct_change`, `median_hh_income`, `income_gini`, `pct_white`, `pct_bachelor`, and `pct_rented`.  
 
@@ -60,3 +62,4 @@ pct_white                  0.0760      0.002     38.660      0.000       0.072  
 pct_bachelor               0.4777      0.013     36.866      0.000       0.452       0.503
 pct_rented                -0.0601      0.001    -58.163      0.000      -0.062      -0.058
 ==========================================================================================
+
