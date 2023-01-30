@@ -41,7 +41,7 @@ The results of the logistic regression suggest that there are several independen
 With that said, the results of this logistic regression suggest that higher median household income and a higher percentage of properties being rented are associated with a lower likelihood of a property owner having an unpaid bill, while a higher percentage of the population being white and having a bachelor's degree or higher are associated with a higher likelihood of a property owner having an unpaid bill.
 
 The variables `total_value_pct_change` and `income_gini` are not statistically significant in their relationship with the likelihood of a property owner having an unpaid bill. 
-
+```
  Logit Regression Results                           
 ==============================================================================
 Dep. Variable:            unpaid_bill   No. Observations:                81885
@@ -62,4 +62,4 @@ pct_white                  0.0760      0.002     38.660      0.000       0.072  
 pct_bachelor               0.4777      0.013     36.866      0.000       0.452       0.503
 pct_rented                -0.0601      0.001    -58.163      0.000      -0.062      -0.058
 ==========================================================================================
-
+```
