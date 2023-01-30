@@ -14,8 +14,8 @@ Urban3 has already shown that homes in the bottom quintiles have experienced a s
 
 My analysis builds on this, by showing that the bottom quintiles are also shouldering more of the unpaid property bills, with higher rates of unpaid property bills across lower housing-valuation quintiles and deciles.
 
-![quintiles](images/quintile_unpaid_bill_plot1.png)
-![deciles](images/decile_unpaid_bill_polt1.png)
+![quintiles](images/unpaid_property_bill_quintile_rates.png)
+![deciles](images/unpaid_property_bill_decile_rates.png)
 
 It should be noted that this analysis was conducted independently from Urban3's research and therefore the methodology is likely different. Any comparisons or extrapolations should be made with caution.
 ## Percent Change in Property Value by Unpaid Bills
