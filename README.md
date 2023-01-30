@@ -24,7 +24,7 @@ The question this next section aims to answer is whether a higher percent change
 
 Further research is needed to fully understand the relationship between unpaid property bills and gentrification in Buncombe County. However, unpaid bills could be an early-stage symptom of gentrification, as it becomes more expensive to pay taxes on homes.
 
-This is the beginning of a model that tries to predict unpaid bills. Perhaps learning more about what may cuase unpaid bills could help us make public policy recommendations to curb gentrification.
+This is the beginning of a model that tries to predict unpaid bills. Perhaps learning more about what potentially causes unpaid bills could help us make public policy recommendations to curb gentrification.
 
 The variable `total_value_pct_change` represents the percent change in taxable real estate value for single-family homes from 2020 to 2021, and `unpaid_bill` is a binary variable indicating whether or not a property owner has an unpaid bill.
 
