@@ -5,7 +5,7 @@ This analysis aims to explore the potential relationship between unpaid property
 - The rates of unpaid property bills among home-valuation quintiles and deciles.
 - A logistics regression that looks for correlation between unpaid property bills and rising home valuations, among other factors, in different housing-valuation quintiles.
 
-In addition to the README, the [Jupyter Notebook](unpaid_property_bills_analysis.ipynb) in this repositry contains comments on my methodology. 
+In addition to the README, the [Jupyter Notebook](unpaid_property_bills_analysis.ipynb) in this repositry contains comments on my methodology. I pulled this data on January 25, 2022.
 ## Highlighted Preliminary Findings
 
 - The rates of unpaid property bills in 2022 were higher among groups with lower housing valuations.
