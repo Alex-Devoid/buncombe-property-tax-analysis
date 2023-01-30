@@ -8,8 +8,8 @@ This analysis aims to explore the potential relationship between unpaid property
 In addition to the README, the Jupyter Notebook in this repositry contains comments on my methodologies. 
 ## Highlighted Preliminary Findings
 
-- The rates of unpaid property bills were higher among groups with lower housing valuations.
-- In the lowest housing-valuation decile, rates of unpaid property bills were roughly three times higher than in the decline with the highst valuations.
+- The rates of unpaid property bills in 2022 were higher among groups with lower housing valuations.
+- In the lowest housing-valuation decile, rates of unpaid property bills in 2022 were roughly three times higher than in the decile with the highst valuations.
 ## Rates of Unpaid Property Bills
 
 Urban3 has already shown that homes in the bottom quintiles have experienced a sharper rise in valuations, likely contributing to gentrification. 
