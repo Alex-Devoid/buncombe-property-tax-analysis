@@ -7,6 +7,9 @@ This analysis aims to explore the potential relationship between unpaid property
 
 In addition to the README, the [Jupyter Notebook](unpaid_property_bills_analysis.ipynb) in this repositry contains comments on my methodology. I pulled this data on January 25, 2022.
 
+This is an MVP of a 3D map to show the Shiloh, Biltmore Forest, Burton Street and Brucemont/Louisiana neighborhoods. The red parcels are those with unpaid bills. Parcel height represents the percent change in property value.
+https://raw.githack.com/Alex-Devoid/buncombe-property-tax-analysis/master/unpaid_property_bill_map.html
+
 ## Highlighted Preliminary Findings
 
 - The rates of unpaid property bills in 2022 were higher among groups with lower housing valuations.
